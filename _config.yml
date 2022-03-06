@@ -8,6 +8,7 @@ author:
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
 permalink: /:year/:month/:day/:title:output_ext
+future: true
 
 #Plugins
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
