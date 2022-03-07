@@ -1,9 +1,9 @@
 ---
 title: Complex Numbers - Gaussian Integers, Gaussian Primes
-author: Julia Kozak
+auth: Julia Kozak
 layout: post
-categories: [Number Theory]
-image: /assets/img/logo.jpg
+categories: [Math, Number Theory]
+image: /assets/img/gaussian.jpg
 description: "Intro to Complex Numbers in problems, and applied Gaussian Integers"
 published: true
 ---
