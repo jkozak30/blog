@@ -1,6 +1,6 @@
 //Colors
-$base: #a2a2a2;
-$light-grey: #ebebeb;
+$base: #a2a2a2; /*#a2a2a2 ;; text for subhead/links*/
+$light-grey: rgba(55, 55, 55, 1); /*#ebebeb*/
 
 * {
   -webkit-box-sizing: border-box;
@@ -9,6 +9,8 @@ $light-grey: #ebebeb;
 }
 html{
   scroll-behavior: smooth;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/collage.jpg");
+  color: rgba(255, 255, 255, 0.5);
 }
 .container {
     margin-left: auto;
@@ -24,7 +26,7 @@ html{
 .alert{
   padding: 20px;
   border-radius: 0 4px 4px 0;
-  color: #fff;
+  color: #fff; /*#fff*/
   display: block;
   font-size: larger;
 }
@@ -47,7 +49,7 @@ html{
 
 //Blockquote
 blockquote {
-  border-left: .25em solid #dfe2e5;
+  border-left: .25em solid #dfe2e5; /*#dfe2e5*/
   color: #6a737d;
   padding: 0 1em;
   cite{
@@ -77,12 +79,12 @@ blockquote {
 }
 
 #markdown-toc {
-  border: 1px solid #aaa;
+  border: 1px solid #aaa; /*#aaa*/
   border-radius: 10px;
   padding: 1.5em;
   list-style: disc;
   display: inline-block;
-  background-color: $light-grey;
+  background-color: $light-grey; /*$light-grey*/
   line-height: 25px;
   li{
     a{
@@ -101,7 +103,7 @@ blockquote {
 //Archive
 .archive-link{
   text-decoration: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.5); /*black*/
   font-style: italic;
   font-size: 1.5rem;
 }

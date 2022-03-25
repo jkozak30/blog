@@ -6,7 +6,7 @@
         background: none;
         border: none;
         border-bottom: 1px solid #666;
-        color: #666;
+        color: #666; /*#666*/
         outline: none;
         transition: border-color .2s;
         margin-top: 15px;
@@ -19,9 +19,10 @@
         cursor: pointer;
         outline: none;
         margin-top: 10px;
-        border: black 1px solid;
+        border: rgba(255, 255, 255, 0.5) /*black*/ 1px solid; /*black*/
         padding: 10px;
         border-radius: 10px;
+        color: rgba(255, 255, 255, 0.5);
       }
     .form-button:hover{
         background-color: $light-grey;

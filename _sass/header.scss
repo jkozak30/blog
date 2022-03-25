@@ -19,7 +19,7 @@ header{
   
     #site_title{
         text-align: center;
-        color: black;
+        color: black; /*black*/
         a{
             text-decoration: none;
         }
@@ -39,7 +39,7 @@ header{
                 display: block;
                 float: left;
                 a:hover{
-                    color: black;
+                    color: rgba(255, 255, 255, 0.5); /*black*/
                 }
                 a{
                     text-decoration: none;

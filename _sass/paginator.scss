@@ -20,11 +20,11 @@
     }
 
     a:hover{
-        color: black;
+        color: rgba(255, 255, 255, 0.5); /*black*/
     }
 
     .paginate-button{
-        border: 1px solid #e0e0e0;
+        border: 1px solid #e0e0e0 ; /*#e0e0e0 ;; button border*/
         border-radius: 3px;
         padding: 15px 35px;
         display: inline-block;
