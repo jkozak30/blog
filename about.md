@@ -4,10 +4,12 @@ title: About
 ---
 
 #### Hello! 
-This is a site created by [Julia Kozak](https://github.com/jkozak30) aimed at sharing information on higher level educational (mainly math and computer science) topics for those interested.
+This is a site created by [Julia Kozak](https://github.com/jkozak30) (me) aimed at ... anything and everything. It has various projects created by myself and friends, and I hope you find something you like!
 
 #### Contributors
 **Web Editor:** Julia Kozak
+
+**Web Design:** Hana Sasaki
 
 **Writers:** Julia Kozak, [Maxwell Ito](https://github.com/miyto)
 

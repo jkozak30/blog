@@ -4,7 +4,7 @@ analytics-id: #leave blank to not use Analytics
 #Subtitle
 subtitle:
   active: true
-  text: Articles/Blogposts/etc.
+  text: Articles, References, Art, etc.
 
 #Nav 
 nav:
