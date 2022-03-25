@@ -3,7 +3,7 @@ title: Complex Numbers - Gaussian Integers, Gaussian Primes
 auth: Julia Kozak
 layout: post
 categories: [Math, Number Theory]
-image: /assets/img/gaussian.jpg
+image: /assets/img/gua.jpg
 description: "Intro to Complex Numbers in problems, and applied Gaussian Integers"
 published: true
 ---

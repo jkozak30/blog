@@ -4,7 +4,7 @@ title: Home
 ---
 {% for post in paginator.posts %}
 
-<div class="post">
+<div class="post" style="padding-left:1rem;padding-right:1rem;background-color: rgba(255, 255, 255, 0.1);color: rgba(255, 255, 255, 0.8);">
     <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
 
     {% if site.data.settings.date-under-post.active %} 

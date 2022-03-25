@@ -3,7 +3,7 @@ title: Mass Points and Barycentric Coordinates
 auth: Julia Kozak
 layout: post
 categories: [Math, Geometry]
-image: /assets/img/logo.jpg
+
 description: ""
 published: true
 ---
