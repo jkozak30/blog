@@ -13,9 +13,9 @@ Julia has a Nikon camera from 2008 that she showed to me when I was in middle sc
 
 Maybe my eagerness was suspicious, because Julia wouldn't let me alone with it. We ended up planning a trip to the Lower East Side to photograph art and the city (although photographing the city was awful, I remember it was pouring that day). We went to (the old!) Essex Street Market and the New Museum nearby. For some reason my 8th-grade self found a crammed aisle of tea and dish soap to be very aesthetically pleasing, which I still agree with.
 
-Clearly the quality of the photos is far from professional, and I had really doubted that they were any good from the preview on the small display screen. But, Julia sent them to me three years later (what awful procrastination...) and they look so cool! They have character to them, that iPhone photos don't, and the low-light grain feels warm and nostalgic to me.
+Clearly the quality of the photos is far from professional, and I had really doubted that they were any good from the preview on the small display screen. But, looking at them three years later (what awful procrastination...), they look so cool! They have character to them, that iPhone photos don't, and the low-light grain feels warm and nostalgic to me.
 
-Enjoy my favorites from Julia's favorites.
+Enjoy my favorites. <3
 
 #### Photos
 
