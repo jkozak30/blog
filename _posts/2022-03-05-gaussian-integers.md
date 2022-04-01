@@ -56,7 +56,7 @@ Equating real and imaginary parts:
 
 ---
 
-**De Moivre's formula** applies this by stating that $$[r \text{ cis }\theta]^n = r^n \text{ cis }(n\theta)$$. This follows from an induction on repeated multiplication by $$r \text{ cis }\theta$$, using the statement of the proof for rotations/dilations.
+**De Moivre's formula** applies this by stating that $$[r \text{ cis }\theta]^n = r^n \text{ cis }(n\theta)$$. This follows pretty similarly as the above proof.
 
 The $$n$$th **roots of unity** are the solutions to $$z^n = 1$$. In particular, they will be $$1, \zeta, \zeta^2, ... \zeta^{n-1}$$, where $$\zeta = e^{i\frac{2\pi}{n}}$$ And since the roots are evenly spaced rotations of each other along a unit circle, they will map to the vertices of a regular $$n$$-gon.
 
