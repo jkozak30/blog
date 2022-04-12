@@ -12,7 +12,7 @@ This is a blog.
 - **Theme (base):** [Alessio Franceschi](https://github.com/PandaSekh/Jekyll-YAMT)
 
 
-Don't stay on the GitHub for too long. Here's the [link.](https://jkozak30.github.io/blog/)
+Here's the [link.](https://jkozak30.github.io/blog/)
 
 
 
