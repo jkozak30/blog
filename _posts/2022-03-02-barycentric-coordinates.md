@@ -1,5 +1,5 @@
 ---
-title: Mass Points and Barycentric Coordinates
+title: Mass Points and Barycentric Coordinates Basics
 auth: Julia Kozak
 layout: post
 categories: [Math, Geometry]
@@ -81,16 +81,18 @@ Personally, I'd use the area definition for all of these.
 
 ---
 
-#### Equations 
+#### Problems
 
-**Areas**
+- (Mandelbrot 2013) Three concurrent cevians of $$\triangle ABC$$, $$AX, BY, CZ$$, intersect at $$P$$. If $$PZ/PC = 2/3$$ and $$PY/PB = 2/7$$, find $$PX/PA$$.
+- In $$\triangle ABC$$, $$BB_1$$ and $$CC_1$$ are medians. $$D$$ is on $$BC$$ such that $$L$$, the intersection of $$AD$$ and $$BB_1$$, is the midpoint of $$BB_1$$. $$K$$ is the intersection of $$AD$$ and $$CC_1$$. What is $$C_1K/KC$$?
+- The base $$ABCD$$ of a pyramid $$FABCD$$ is a parallelogram. The plane $$\alpha$$ intersects $$AF, BF, CF,$$ and $$DF$$ at points $$A_1, B_1, C_1,$$ and $$D_1$$, respectively. Given that $$\frac{AA_1}{A_1F} = 2, \frac{BB_1}{B_1F} = 5, \frac{CC_1}{C_1F} = 10$$, find the ratio $$\frac{DD_1}{D_1F}$$.
+- Prove the existence of the Gergonne point, the point of concurrency between the cevians to the points of tangency of the incircle. Find its non-absolute barycentric coordinates.
+- Find the barycentric coordinates of the symmedian point.
+- Let $$A_1$$, $$B_1$$, $$C_1$$ be the feet of altitudes of acute triangle $$\triangle ABC$$. Lengths $$A_1B_1 = 26, A_1C_1 = 28,$$  $$B_1C_1 = 30$$. Find the area of triangle $$\triangle ABC$$.
 
-Sort of referenced before, areas enclosed by three points can be found in terms of a cross product. In $$\triangle ABC$$, from $$A$$, we see that the vectors to $$B, C$$ will form half the area of the parallelogram represented by $$||(B-A) \times (C-A)||$$. So, area is $$\frac{1}{2} \begin{vmatrix} \overrightarrow{A} & \overrightarrow{B} & \overrightarrow{C} \\ 1 & 1 & 1\end{vmatrix}$$
+---
 
-
-- A line is something of the form $$\overrightarrow{A}x + \overrightarrow{B}y + \overrightarrow{C}z = 0$$. 
-- Given two points' $$P, Q$$ barycentric coordinates $$(p_1 : p_2 : p_3), (q_1 : q_2 : q_3)$$, it'd be useful to find the equation of the line passing through them.
-
-**Theorem:** The line passing through $$P = (p_1 : p_2 : p_3)$$ and $$Q = (q_1 : q_2 : q_3)$$ is $$\begin{vmatrix} p_1 & p_2 & p_3 \\ q_1 & q_2 & q_3 \\ x & y & z\end{vmatrix} = 0$$.
-
-**Proof:** 
+##### Resources
+- http://www.aquatutoring.org/TYMCM%20Mass%20Points.pdf
+- https://www.journal-1.eu/2016-1/Francisco-Javier-Problems-pp.36-44.pdf
+- https://web.evanchen.cc/handouts/bary/bary-full.pdf
