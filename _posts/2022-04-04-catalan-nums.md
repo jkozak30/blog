@@ -76,6 +76,7 @@ This recursive definition applies to a new situation. The problem is: how many w
 - You can get every pair of $$k$$-gon and $$n-k+1$$-gon, for $$2 \leq k < n-2$$. 
 - So, using our inductive hypothesis, the total is $$C_{0}C_{n-1} + C_{1}C_{n-2}+ ... + C_{n-1}C_0$$, which is $$C_n$$.
 
+
 #### Binary Tree Counting
 
 {insert diagram}
@@ -92,7 +93,7 @@ There's actually a one to one correspondence between polygon triangulations and 
 {insert diagram}
 
 
-#### Generating Function $$\sum_{i=1}^{\infty}C_nx^n$$
+#### Generating Function $$\sum_{n=1}^{\infty}C_nx^n$$
 
 - Let's get a closed form for $$\sum_{n=0}^{\infty}C_nx^n$$ for a certain $$x$$.
 - Let $$y = \sum_{n=0}^{\infty}C_nx^n$$. 
@@ -113,8 +114,28 @@ Now we can solve for y:
 
 Which sign is correct? Let's consider the $$C_0$$ term in that case. If it were the case that the sign should be $$+$$, then as $$x \rightarrow 0$$, $$y \rightarrow \infty$$, which wouldn't make sense.
 
+So, $$\sum_{n=1}^{\infty}C_nx^n = \frac{1 - \sqrt{1-4x}}{2x}$$
+
+#### Other Applications
+
+- **Handshakes Across a Table:** How many ways are there to pair $$2n$$ people around a circular table such that each pair can shake hands without any pairs crossing arms? This also turns out to be $$C_n$$, which is proved similarly by an induction argument.
+- **$$C_n$$** equals the number of ways to place $$n$$ balls in $$n$$ boxes such that there are at most $$k$$ balls in the $$k$$th box. This can be thought of similarly to the situation of diagonal-avoiding paths.
+- **Stack sorted sequences**: It is also equal to the number of permutations of the values $$a_1, a_2, ..., a_n$$ such that there exist no indices $$i < j < k$$ such that $$a_k < a_i < a_j$$ (these are also called $$312$$-avoiding permutations).
+
+
+---
+
 #### Problems
 - How many ways are there to get from $$(0, 0)$$ to $$(6, 6)$$ along lattice points and going only right or up such that you do not enter the region $$y > x$$?
 - (Ballot Problem) Two candidates, $$A$$ and $$B$$ are in an election, and each of them receives $$n$$ votes. What is the probability that $$A$$ will never have less votes than $$B$$?
 - (PUMaC 2021) Nelson is having his friend drop his unique bouncy ball from a $$12$$ foot building, and Nelson will only catch the ball at the peak of its trajectory between bounces. On any given bounce, there is an $$80\%$$ chance that the next peak occurs at $$\frac{1}{3}$$ the height of the previous peak and a $$20\%$$ chance that the next peak occurs at $$3$$ times the height of the previous peak (where the first peak is at $$12$$ feet). If Nelson can only reach $$4$$ feet into the air and will catch the ball as soon as possible, what is the probability that Nelson catches the ball after exactly $$13$$ bounces?
 - You have two types of parenthesis, brackets $$[]$$ and curly braces $$\{\}$$. How many ways are there to arrange $$5$$ pairs of brackets and $$3$$ pairs of curly braces such that each pair is valid (through code or mathematically)? How many ways are there for $$m$$ bracket pairs and $$n$$ curly braces pairs?
+- Prove $$\lim_{n \to \infty}\frac{C_{n+1}}{C_{n}} = 4$$.
+
+---
+
+#### Resources
+
+- https://oeis.org/A000108
+- http://www.geometer.org/mathcircles/catalan.pdf
+- https://math.mit.edu/~rstan/transparencies/china.pdf
