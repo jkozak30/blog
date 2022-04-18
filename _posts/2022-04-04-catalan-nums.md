@@ -3,7 +3,7 @@ title: Catalan Numbers
 auth: Julia Kozak, Maxwell Ito
 layout: post
 categories: [Math, Computer Science, Number Theory]
-image: assets/img/logo.jpg
+image: assets/img/reflecro.png
 # my computer ... png .......
 description: "Catalan Numbers"
 published: true
@@ -15,13 +15,13 @@ There are a lot of ways to define Catalan Numbers. We'll number a few of them on
 - This is probably the interpretation that is easiest to get an implicit formula from. 
 - Take an $$n \times n$$ grid, going from $$(0, 0)$$ to $$(n, n)$$, and consider the number of paths to get from the bottom left corner to the top right corner such that you do not cross over the line $$y=x$$ (you may be on the diagonal however). How many ways are there to find such a path, going only right or up each move?
 
-{insert diagram}
+![](../../../assets/img/catalan.png)
 
 **One way to think about it** is in terms of the sequence of moves, where we'll say $$R$$ is right and $$U$$ is up. For an $$n \times n$$ grid, we need a total of $$n$$ of each move, ordered in some way (with constraints). If we could order them in any way to get a path, that is essentially just solving the problem of how many ways to get to $$(n, n)$$ in any way, which is also choosing $$n$$ of your $$2n$$ moves to be $$R$$, and the other $$n$$ to be $$U$$. This is $${2n \choose n}$$. But, the added condition is that you can't go more times up than right at any point, because then $$y > x$$, and you're above the diagonal.
 
 **So,** let's subtract off the cases that do this. 
 
-{insert diagram}
+![](../../../assets/img/reflecro.png)
 
 Let's consider an arbitrary path that crosses the diagonal. At the point where it passes the diagonal, reflect the rest of the path at $$y=x+1$$. Basically, at the point where you've made an invalid move, swap each next move, where $$R$$ changes to $$U$$ and $$U$$ to $$R$$. Then, our final landing position shouldn't be at $$(n, n)$$ but $$(n-1, n+1)$$. And, there is a one to one correspondence between invalid paths and paths going to this point, as any path to $$(n-1, n+1)$$ will pass $$y=x$$ at some specific point, meaning we can retrace the path corresponding to $$(n, n)$$.
 
@@ -69,7 +69,8 @@ Recursively, $$C_n = C_{n-1}C_0 + C_{n-2}C_1 + C_{n-3}C_{2} + ... + C_1C_{n-2} +
 
 This recursive definition applies to a new situation. The problem is: how many ways are there to triangulate a regular $$n+2$$-gon? It turns out to be $$C_n$$.
 
-{insert diagram}
+![](../../../assets/img/polygon.png)
+<p style="text-align: center; color: rgb(255, 255, 200, 0.6);">via Wolfram MathWorld</p>
 
 - Here's how to do it inductively/recursively. Assume it is true for all $$<n+2$$-gons. 
 - Pick a side, and draw a triangle by picking one other vertex to connect the endpoints of the side to. You've split the polygon into a triangle, and $$1$$ or $$2$$ other convex polygons that can be triangulated similarly. For instance, if you picked the vertex directly to the left of the side, you get two new polygons, $$2$$-gon and $$n-1$$-gon. If you picked the next vertex, you get a $$3$$-gon and $$n-2$$-gon.
@@ -79,7 +80,7 @@ This recursive definition applies to a new situation. The problem is: how many w
 
 #### Binary Tree Counting
 
-{insert diagram}
+![](../../../assets/img/treec.png)
 
 This also ends up being equal to the total number of binary trees with $$n$$ internal nodes. 
 - **Definition:** a binary tree is an arrangement of nodes with a root such that every node descending from the root terminates, or leads to two more nodes.
@@ -90,7 +91,6 @@ This follows from a similar argument to the one for polygon triangulations. Your
 
 There's actually a one to one correspondence between polygon triangulations and binary trees, if you were to give each triangle within your polygon a vertex, and connect it to the triangles it shares a side with.
 
-{insert diagram}
 
 
 #### Generating Function $$\sum_{n=1}^{\infty}C_nx^n$$
@@ -98,19 +98,23 @@ There's actually a one to one correspondence between polygon triangulations and 
 - Let's get a closed form for $$\sum_{n=0}^{\infty}C_nx^n$$ for a certain $$x$$.
 - Let $$y = \sum_{n=0}^{\infty}C_nx^n$$. 
 
-- $$\sum_{n=0}^{\infty}C_{n+1}x^n = \sum_{n=0}^{\infty}(\sum_{k=0}^{n}C_{k}C_{n-k})x^n.$$
+$$\sum_{n=0}^{\infty}C_{n+1}x^n = \sum_{n=0}^{\infty}(\sum_{k=0}^{n}C_{k}C_{n-k})x^n.$$
 
 Now we can rewrite:
-- $$x\sum_{n=0}^{\infty}C_{n+1}x^n = \sum_{n=1}^{\infty}C_{n+1}x^n = y-1.$$
+
+$$x\sum_{n=0}^{\infty}C_{n+1}x^n = \sum_{n=1}^{\infty}C_{n+1}x^n = y-1.$$
 
 We also know that $$\sum_{k=0}^{n}C_{k}C_{n-k}$$ is the coefficient of $$x^n$$ in $$y^2 = (\sum{n=0}{\infty}C_nx^n)^2$$, if we consider pairwise factors coming from each $$y$$.
 
 The coefficient is then:
-- $$\frac{y-1}{x} = y^2.$$
-- $$xy^2 - y + 1 = 0. $$
+
+$$\frac{y-1}{x} = y^2.$$
+
+$$xy^2 - y + 1 = 0. $$
 
 Now we can solve for y:
-- $$y = \frac{1 \pm \sqrt{1-4x}}{2x}.$$
+
+$$y = \frac{1 \pm \sqrt{1-4x}}{2x}.$$
 
 Which sign is correct? Let's consider the $$C_0$$ term in that case. If it were the case that the sign should be $$+$$, then as $$x \rightarrow 0$$, $$y \rightarrow \infty$$, which wouldn't make sense.
 
