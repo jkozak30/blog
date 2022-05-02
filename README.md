@@ -1,7 +1,8 @@
 ![tp](https://user-images.githubusercontent.com/90654842/162844647-d995ab5e-ae41-47b1-8825-3e0e94ebef13.jpg)
 # JX - Misc Blog 
 
-![](https://komarev.com/ghpvc/?username=jkozak30&label=Profile%20views&color=000000&style=flat) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/jkozak30/blog/issues)
+![](https://komarev.com/ghpvc/?username=jkozak30&label=Profile%20views&color=969696&style=flat) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/jkozak30/blog/issues)
+<!-- unironically good color shh -->
 
 #### Hello. 
 This is a blog.
