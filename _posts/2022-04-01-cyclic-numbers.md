@@ -3,7 +3,7 @@ title: Cyclic Numbers
 auth: Julia Kozak
 layout: post
 categories: [Math, Number Theory]
-image: assets/img/logo.jpg
+image: assets/img/cycy.jpg
 # my computer ... png .......
 description: "Cyclic Numbers"
 published: true
