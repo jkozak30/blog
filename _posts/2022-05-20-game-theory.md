@@ -4,7 +4,7 @@ auth: Julia Kozak, Maxwell Ito
 layout: post
 categories: [Math, Computer Science]
 image: assets/img/ttt.png
-# my computer ... png .......
+# my computer ... png ......
 description: "Don't lie. This isn't computer science."
 published: true
 ---
